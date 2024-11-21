@@ -1,0 +1,83 @@
+/*Main animation*/
+
+.gradient{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background: radial-gradient(circle, rgb(251, 91, 63) 0%, rgb(250, 170, 96) 100%);
+    filter: blur(200px);
+    right: 0px;
+    top: 0;
+    animation: moveVertical 30s ease infinite;   
+}
+
+.gradient2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: linear-gradient(45deg, #183386, #3db8dd);
+    filter: blur(200px);
+    left: 0;
+    bottom: 0;
+    animation: moveVertical 30s ease infinite;
+}
+
+/*GRADIENTS*/
+
+.gradient__hot.active,
+.gradient__cold.active,
+.gradient__snow.active{
+    display: block;
+}
+
+.gradient__hot,
+.gradient__cold,
+.gradient__snow{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    right:0;
+    top: 0;
+    filter: blur(200px);
+    animation: moveVertical 30s ease infinite;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.gradient__hot{
+    background: radial-gradient(circle, rgb(251, 91, 63) 0%, rgb(250, 170, 96) 100%);
+}
+
+.gradient__cold{
+    background: linear-gradient(45deg, #183386, #3db8dd);
+}
+
+.gradient__snow{
+    background: radial-gradient(ellipse, rgba(176,174,238,1) 0%, rgba(29,30,31,1));
+}
+
+
+@keyframes moveVertical {
+    0% {
+    transform: translateY(-50%);
+    }
+    50% {
+    transform: translateY(50%);
+    }
+    100% {
+    transform: translateY(-50%);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+

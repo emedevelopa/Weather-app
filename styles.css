@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --mainFont:"Bricolage Grotesque";
+    --secondFont:"Mona Sans";
+
+    
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    background-image: url(Assets/background-tile.webp);
+}
+
+.main__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    max-width: 1200px;
+    height: 230px;
+    border: 2px solid white;
+    padding: 2rem;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    transition: height .6s ease;
+}
+
+.main__title{
+    font-size: 3rem;
+    font-family: var(--secondFont);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.input__container{
+    border:none;
+    border-bottom: 2px solid white;
+}
+.input__text{
+    width:250px;
+    height: 40px;
+    background-color: transparent;
+    border:none;
+    font-size: 1.5rem;
+    color:white;
+    margin-top: 2rem;
+}
+
+.input__text:focus{
+    outline: none;
+}
+
+.input__btn{
+    border: none;
+    background-color: transparent;
+}
+
+.input__icon{
+    width: 20px;
+}
+
+.weather__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+    visibility: hidden;
+    
+}
+.weather__container.active{
+    visibility: visible;
+}
+
+.weather__icon{
+    width: 100px;
+}
+.weather__temp{
+    font-size: 5rem;
+}
+
+/*.weather__city{
+    font-size: 7rem;
+}*/
+
+.weather__info{
+    display: flex;
+    gap: 3rem;
+}
+
+.weather__item{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.weather__img{
+    width: 40px;
+}
+
+.weather__texts{
+    font-size: 1.5rem;
+}
+
+.not-found__container{
+    position: absolute;
+    top:200px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.not-found__container.active{
+    visibility: visible;
+}
+
+.not-found__title{
+    font-size: 10rem;
+    font-family: var(--secondFont);
+}
+
+.not-found__text{
+    font-size: 1.5rem;
+    font-family: var(--secondFont);
+    letter-spacing: 2px;
+}
+

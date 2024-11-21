@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Daily Weather</title>
+</head>
+<body>
+    <div class="gradient"></div>
+    <div class="gradient2"></div>
+    <div class="gradient__cold"></div>
+    <div class="gradient__hot"></div>
+    <div class="gradient__snow"></div>
+    <main class="main__container">
+        <h1 class="main__title">Daily Weather</h1>
+        <div class="input__container">
+            <input class="input__text" type="text" placeholder="Enter your city">
+            <button class="input__btn">
+                <img src="Assets/search.svg" class="input__icon">
+            </button>
+        </div>
+
+        <div class="weather__container">
+            <img src="Assets/cloud.svg" class="weather__icon">
+            <p class="weather__temp"></p>
+            <!--<p class="weather__city"></p>-->
+            <div class="weather__info">
+                <div class="weather__item">
+                    <img src="Assets/humidity.svg" class="weather__img humidity">
+                    <div class="weather__texts">
+                        <p class="weather__humidity"></p>
+                        <p class="weather__text--humidity">Humidity</p>
+                    </div>
+                </div>
+                <div class="weather__item">
+                    <img src="Assets/wind.svg" class="weather__img wind">
+                    <div class="weather__texts">
+                        <p class="weather__wind"></p>
+                        <p class="weather__text--wind">Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="not-found__container">
+            <p class="not-found__title">404</p>
+            <p class="not-found__text">Sorry, location not found.</p>
+        </div>
+    </main>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
