@@ -31,7 +31,7 @@ body{
     align-items: center;
     width: 650px;
     max-width: 1200px;
-    height: 230px;
+    height: 280px;
     border: 2px solid white;
     padding: 2rem;
     background-color: transparent;
@@ -40,13 +40,14 @@ body{
 }
 
 .main__title{
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: var(--secondFont);
     font-weight: 400;
     letter-spacing: 2px;
 }
 
 .input__container{
+    padding: 0 1rem;
     border:none;
     border-bottom: 2px solid white;
 }
@@ -55,7 +56,7 @@ body{
     height: 40px;
     background-color: transparent;
     border:none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:white;
     margin-top: 2rem;
 }
@@ -78,8 +79,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    gap: 1rem;
+    margin-top: 2rem;
+    gap: 3rem;
     visibility: hidden;
     
 }
@@ -90,13 +91,11 @@ body{
 .weather__icon{
     width: 100px;
 }
+
 .weather__temp{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
-/*.weather__city{
-    font-size: 7rem;
-}*/
 
 .weather__info{
     display: flex;
@@ -114,7 +113,7 @@ body{
 }
 
 .weather__texts{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .not-found__container{
@@ -139,3 +138,29 @@ body{
     letter-spacing: 2px;
 }
 
+
+@media (min-width:768px) {
+    .main__container{
+        height: 250px;
+    }
+
+    .main__title{
+        font-size: 3rem;
+    }
+    .input_text{
+        font-size: 1.5rem;
+    }
+    .weather__temp{
+        font-size: 5rem;
+    }
+    .weather__texts{
+        font-size: 1.5rem;
+    }
+    .weather__container{
+        gap: unset;
+    }
+    .weather__info{
+        margin-top: 2rem;
+    }
+
+}

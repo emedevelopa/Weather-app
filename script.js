@@ -25,11 +25,7 @@ searchBtn.addEventListener("click", () => {
         const hot = document.querySelector(".gradient__hot")
         const cold = document.querySelector(".gradient__cold")
         const snow = document.querySelector(".gradient__snow")
-        /*const nameCity = document.querySelector(".weather__city")
-        city = city.charAt(0).toUpperCase() + city.slice(1).toLowerCase();
-        nameCity.textContent = city;*/
-
-
+    
         if(json.cod == "404") {
 
             container.style.height = "500px"

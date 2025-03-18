@@ -9,7 +9,7 @@
     filter: blur(200px);
     right: 0px;
     top: 0;
-    animation: moveVertical 30s ease infinite;   
+    animation: moveVertical 20s ease infinite;   
 }
 
 .gradient2{
@@ -21,7 +21,7 @@
     filter: blur(200px);
     left: 0;
     bottom: 0;
-    animation: moveVertical 30s ease infinite;
+    animation: moveVertical 20s ease infinite;
 }
 
 /*GRADIENTS*/
@@ -43,7 +43,7 @@
     right:0;
     top: 0;
     filter: blur(200px);
-    animation: moveVertical 30s ease infinite;
+    animation: moveVertical 20s ease infinite;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
